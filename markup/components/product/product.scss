@@ -1,0 +1,269 @@
+.product{
+	width: 100%;
+	position: relative;
+}
+.product__wrapper{
+	width: 1328px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 14px;
+	& > div{
+		margin-top: 70px;
+	}
+}
+.stock__head{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 14px;
+	margin-right: 14px;
+	p{
+		font-family: Proxima Nova Bold, Arial;
+		font-size: 30px;
+		line-height: 1.2;
+		color: #343434;
+		margin: 0;
+	}
+}
+.stock__button{
+	display: flex;
+	.stock__prev{
+		margin-right: 22px;
+		position: relative;
+		& img:last-child{
+			position: absolute;
+			top:0;
+			left:0;
+			z-index: -1;
+		}
+	}
+	.stock__next{
+		position: relative;
+		& img:last-child{
+			position: absolute;
+			top:0;
+			left:0;
+			z-index: -1;
+		}
+	}
+}
+.stock__next:hover{
+	cursor: pointer;
+	img:last-child{
+		z-index: 1;
+	}
+}
+.stock__prev:hover{
+	cursor: pointer;
+	img:last-child{
+		z-index: 1;
+	}
+}
+.product__item{
+	width: 304px;
+	margin-top: 30px;
+	margin-left: 14px;
+	margin-right: 14px;
+	position: relative;
+	flex-shrink: 0;
+}
+.product__sale{
+	position: absolute;
+	top:15px;
+	left:0;
+	width: 283px;
+	margin-left: 15px;
+	margin-right: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+.no__icon{
+	justify-content: flex-end;
+}
+.sale-bcg{
+	position: relative;
+	width: 49px;
+	height: 47px;
+	background-image: url(../img/assets/product/sale.png);
+	p{
+		position: absolute;
+		font-family: Proxima Nova Semibold, Arial;
+		top:0px;
+		left:0px;
+		width: 49px;
+		font-size: 16px;
+		text-align: center;
+		color:#fff;
+	}		
+}
+.no-sale div{
+	p,span{
+		color: #004884;
+	}
+}
+.stock__items{
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+}
+.newicon{
+	position: relative;
+	width: 49px;
+	height: 47px;
+	background-image: url(../img/assets/product/new.png);
+	p{
+		position: absolute;
+		font-family: Proxima Nova Semibold, Arial;
+		top:0px;
+		left:0px;
+		width: 49px;
+		font-size: 16px;
+		text-align: center;
+		color:#fff;
+	}		
+}
+.likeandeye{
+	display: flex;
+	margin-top: 10px;
+	height: 22px;
+}
+.like{
+	width: 24px;
+}
+.eye, .like{
+		margin-right: 20px;
+	&:hover{
+		cursor: pointer;
+	}
+}
+.active__like{
+	background-image: url(../img/assets/product/likefull.png);
+	img{
+		display: none;
+	}
+}
+.product__img{
+	display: flex;
+	width: 100%;
+	img{
+		margin: 0 auto;
+	}
+}
+.product__text{
+	font-family: Proxima Nova Semibold, Arial;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #343434;
+}
+.product__price{
+	display: flex;
+	margin-top: 25px;
+	p, span{
+		margin:0;
+		font-family: Proxima Nova Bold, Arial;
+		font-size: 24px;
+		color: #ae0019;
+	}
+	p{
+		margin-right: 6px;
+	}
+	span{
+		margin-right: 20px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	div{
+		display: flex;
+		align-items: flex-end;
+	}
+	.sale__price{
+		margin-bottom: 1px;
+		p, span{
+			text-decoration: line-through;
+			font-family: Proxima Nova Regular, Arial;
+			font-size: 18px;
+			color: #5f5f5f;
+		}
+		span{
+			text-decoration: none;
+			font-size: 12px;
+		}
+	}
+}
+.product__button{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	a{
+		display: block;
+		text-decoration: none;
+		width: 142px;
+		height: 41px;
+		border:2px solid #00ae46;
+		color: #00ae46;
+		line-height: 41px;
+		text-align: center;
+		font-family: Proxima Nova Bold, Arial;
+		font-size: 18px;
+		cursor: pointer;
+	}
+	a:last-child{
+		background-color: #00ae46;
+		color: #fff;
+	}
+	a:hover{
+			background-color: #004884;
+			border:2px solid #004884;
+			color: #fff;
+	}
+}
+//carusel
+.product{
+	.owl-wrapper-outer {
+	overflow: hidden;
+	border-radius:0;
+	border:0;
+	background-color: #fff;
+}
+/* 1 квадратик карусели */
+.stock__items:active {
+	cursor: url('static/img/assets/slider/grabbing.png'),grabbing;
+}
+}
+.fone{
+	position: absolute;
+	top:-70px;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgb(0, 72, 132);
+	opacity: 0.502;
+	padding-top: 140px;
+	display: none;
+}
+.fone__active{
+	display: block;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1400px){
+	
+	.product__wrapper{
+		width: 996px;
+	}
+	.product__item{
+	margin-left: 8px;
+	margin-right: 8px;
+	}
+}
+@media only screen and (max-width: 1080px){
+
+	.product__wrapper{
+		width: 656px;
+	}
+}
+@media only screen and (max-width: 700px){
+
+	.product__wrapper{
+		width: 320px;
+	}
+}

@@ -1,0 +1,49 @@
+.header_bottomMenuBackground {
+	width: 100%;
+	height: 55px;
+	background-color: $bottomMenuBackground;
+}
+.header_bottomMenu {
+	width: 1360px;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0px 30px;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+}
+// Media until 1359px
+@media (max-width: 1359px) {
+	.header_bottomMenu {
+		width: 1024px;
+	}
+}
+@media (max-width: 1023px) {
+	.header_bottomMenu {
+		width: 768px;
+	}
+}
+@media (max-width: 767px) {
+	.header_bottomMenuBackground {
+		height: 110px;
+	}
+	.header_bottomMenu {
+		padding: 0;
+		padding-top: 5px;
+		width: 540px;
+		position: relative;
+	}
+}
+@media (max-width: 599px) {
+	.header_bottomMenuBackground {
+		height: 170px;
+	}
+	.header_bottomMenu {
+		width: 460px;
+	}
+}
+@media (max-width: 479px) {
+	.header_bottomMenu {
+		width: 300px;
+	}
+}

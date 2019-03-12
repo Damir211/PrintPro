@@ -1,0 +1,76 @@
+.basket_emptyBasket.visible {
+	display: block;
+}
+.basket_emptyBasket {
+	display: none;
+	width: 666px;
+	height: 132px;
+	float: right;
+	background-color: $bottomMenuBasketEmptyBasket;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-left: 40px;
+}
+.emptyBasket {
+	&_icon {
+		position: absolute;
+		top: 2px;
+		right: -40px;
+	}
+	&_text {
+		margin: 0px;
+		margin-top: 40px;
+		font-size: 16px;
+	}
+	&_link {
+		display: block;
+		box-sizing: border-box;
+		width: 160px;
+		padding-right: 20px;
+		margin: 0px;
+		margin-top: 19px;
+		font-size: 16px;
+		color: $bottomMenuBasketEmptyBasketTextLink;
+		font-family: Proxima Nova Semibold, Arial, sans-serif;
+		position: relative;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+		&_arrow {
+			position: absolute;
+			right: 0px;
+			top: 3px;
+		}
+	}
+}
+@media (max-width: 1359px) {
+	.basket_emptyBasket {
+		width: 566px;
+	}
+}
+@media (max-width: 1023px) {
+	.basket_emptyBasket {
+		width: 466px;
+	}
+}
+@media (max-width: 767px) {
+	.basket_emptyBasket {
+		width: 540px;
+		float: none;
+		margin-left: -235px;
+	}
+}
+@media (max-width: 599px) {
+	.basket_emptyBasket {
+		width: 460px;
+		margin-left: -200px;
+	}
+}
+@media (max-width: 479px) {
+	.basket_emptyBasket {
+		width: 300px;
+		margin-left: -125px;
+	}
+}

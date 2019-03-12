@@ -1,0 +1,11 @@
+<div class="header_bottomMenu__searchForm">
+	<form action="" method="POST" name="searchForm" class="searchForm">
+		<input class="searchForm_textArea" type="text" name="searchQuery" placeholder="Название картриджа или принтера,например «CF283A HP»" required>
+		<input class="searchForm_submitBtn" type="submit" name="searchBtn" value="Найти">
+		<img class="searchForm_searchIco" src="static/img/assets/header/searchIco.png" alt="">
+		<!-- Блок "Нет результатов поиска" -->
+		{{> header/bottomMenu/searchForm/noSearchResult/noSearchResult}}
+		<!-- Блок "Результатов поиска" -->
+		{{> header/bottomMenu/searchForm/searchResults/searchResults}}
+	</form>
+</div>

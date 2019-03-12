@@ -1,0 +1,150 @@
+<div class="product">
+	<div class="fone"></div>
+	<div class="product__wrapper">
+		<div class="stock">
+			<div class="stock__head">
+				<p>Акция</p>
+				<div class="stock__button">
+					<div class="stock__prev" id="prev1">
+						<img src="static/img/assets/product/prev.png" alt="prev" class="main">
+						<img src="static/img/assets/product/prev_hover.png" alt="prev" class="main">
+					</div>
+					<div class="stock__next" id="next1">
+						<img src="static/img/assets/product/next.png" alt="next" class="main">
+						<img src="static/img/assets/product/next_hover.png" alt="prev" class="main">
+					</div>
+				</div>
+			</div>
+			<div class="stock__items" id="carusel2">
+				{{#each salelist}}
+			<div class="product__item" data-count="{{col}}" data-brend="{{brend}}" data-creator="{{creator}}" data-model="{{model}}" data-article="{{article}}" data-weight="{{weight}}" data-size="{{size}}" data-sale="{{saleBollean}}"  data-text="{{text1}}" data-ps="{{text2}}">
+				<div>
+					<div class="product__sale">
+					<div class="sale-bcg">
+						<p>{{sale}}</p>
+					</div>
+					<div class="likeandeye">
+						<div class="eye">
+							<img src="static/img/assets/product/eye.png" alt="eye">
+						</div>
+						<div class="like">
+							<img src="static/img/assets/product/like.png" alt="like">
+						</div>
+					</div>
+					</div>
+					<img src="{{imgUrl}}" alt="img" class="imgdata">
+				</div>
+				<div class="product__text">{{text}}</div>
+				<div class="product__price">
+					<div class="saleforjs">
+						<p>{{price}}</p>
+						<span>₸</span>
+					</div>
+					<div class="sale__price">
+						<p>{{saleprice}}</p>
+						<span>₸</span>
+					</div>
+				</div>
+				<div class="product__button">
+					<a href="#">В корзину</a>
+					<a href="#">Купить</a>
+				</div>
+			</div>
+				{{/each}}	
+			</div>
+		</div>
+		<div class="new">
+			<div class="stock__head">
+				<p>Новинки</p>
+				<div class="stock__button">
+					<div class="stock__prev" id="prev2">
+						<img src="static/img/assets/product/prev.png" alt="prev" class="main">
+						<img src="static/img/assets/product/prev_hover.png" alt="prev" class="main">
+					</div>
+					<div class="stock__next" id="next2">
+						<img src="static/img/assets/product/next.png" alt="next" class="main">
+						<img src="static/img/assets/product/next_hover.png" alt="prev" class="main">
+					</div>
+				</div>
+			</div>
+			<div class="stock__items" id="carusel3">
+				{{#each newlist}}
+			<div class="product__item" data-count="{{col}}" data-brend="{{brend}}" data-creator="{{creator}}" data-model="{{model}}" data-article="{{article}}" data-weight="{{weight}}" data-size="{{size}}" data-sale="{{saleBollean}}"  data-text="{{text1}}" data-ps="{{text2}}">
+				<div>
+					<div class="product__sale">
+					<div class="newicon">
+						<p>NEW</p>
+					</div>
+					<div class="likeandeye">
+						<div class="eye">
+							<img src="static/img/assets/product/eye.png" alt="eye">
+						</div>
+						<div class="like">
+							<img src="static/img/assets/product/like.png" alt="like">
+						</div>
+					</div>
+					</div>
+					<img src="{{imgUrl}}" alt="img" class="imgdata">
+				</div>
+				<div class="product__text">{{text}}</div>
+				<div class="product__price no-sale">
+					<div class="saleforjs">
+						<p>{{price}}</p>
+						<span>₸</span>
+					</div>
+				</div>
+				<div class="product__button">
+					<a href="#">В корзину</a>
+					<a href="#">Купить</a>
+				</div>
+			</div>
+				{{/each}}	
+			</div>
+		</div>
+		<div class="hit">
+			<div class="stock__head">
+				<p>Хиты продаж</p>
+				<div class="stock__button">
+					<div class="stock__prev" id="prev3">
+						<img src="static/img/assets/product/prev.png" alt="prev" class="main">
+						<img src="static/img/assets/product/prev_hover.png" alt="prev" class="main">
+					</div>
+					<div class="stock__next" id="next3">
+						<img src="static/img/assets/product/next.png" alt="next" class="main">
+						<img src="static/img/assets/product/next_hover.png" alt="prev" class="main">
+					</div>
+				</div>
+			</div>
+			<div class="stock__items" id="carusel4">
+				{{#each hitlist}}
+			<div class="product__item" data-count="{{col}}" data-brend="{{brend}}" data-creator="{{creator}}" data-model="{{model}}" data-article="{{article}}" data-weight="{{weight}}" data-size="{{size}}" data-sale="{{saleBollean}}"  data-text="{{text1}}" data-ps="{{text2}}">
+				<div>
+					<div class="product__sale no__icon">
+					<div class="likeandeye">
+						<div class="eye">
+							<img src="static/img/assets/product/eye.png" alt="eye">
+						</div>
+						<div class="like">
+							<img src="static/img/assets/product/like.png" alt="like">
+						</div>
+					</div>
+					</div>
+					<img src="{{imgUrl}}" alt="img" class="imgdata">
+				</div>
+				<div class="product__text">{{text}}</div>
+				<div class="product__price no-sale">
+					<div class="saleforjs">
+						<p>{{price}}</p>
+						<span>₸</span>
+					</div>
+				</div>
+				<div class="product__button">
+					<a href="#">В корзину</a>
+					<a href="#">Купить</a>
+				</div>
+			</div>
+				{{/each}}	
+			</div>
+		</div>
+	</div>
+</div>

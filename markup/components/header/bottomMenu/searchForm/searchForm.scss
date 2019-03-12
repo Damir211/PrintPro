@@ -1,0 +1,139 @@
+.searchForm {
+	box-sizing: border-box;
+	width: 722px;
+	height: 55px;
+	padding-top: 55px;
+	padding-left: 15px;
+}
+.header_bottomMenu__searchForm {
+		width: 772px;
+		height: 100%;
+		position: relative;
+		z-index: 500;
+}
+.searchForm {
+	&_textArea {
+		outline: none;
+		width: 566px;
+		height: 38px;
+		font-size: 16px;
+		position: absolute;
+		top: 9px;
+		left: 15px;
+		border: none;
+		box-sizing: border-box;
+		padding-left: 55px;	
+		padding-right: 20px;		
+	}
+	&_submitBtn {
+		outline: none;
+		width: 176px;
+		height: 38px;
+		font-size: 18px;
+		position: absolute;
+		top: 9px;
+		right: 15px;
+		cursor: pointer;
+		border: none;
+		background-color: $searchFormSubmitBtn;
+		font-family: Proxima Nova Bold, Arial, sans-serif;
+		color: $bottomMenuTextColor;
+		&:hover {
+			background-color: $searchFormSubmitBtnHover;
+		}
+	}
+	&_searchIco {
+		position: absolute;
+		top: 18px;
+		left: 38px;
+	}
+}
+// Media until 1359px
+@media (max-width: 1359px) {
+	.header_bottomMenu__searchForm {
+		width: 609px;
+	}
+	.searchForm {
+		width: 579px;
+		font-size: 15px;
+		&_textArea {
+			width: 459px;
+		}
+		&_submitBtn {
+			width: 120px;
+			font-size: 15px;
+		}
+	}
+}
+@media (max-width: 1023px) {
+	.header_bottomMenu__searchForm {
+		width: 450px;
+	}
+	.searchForm {
+		width: 429px;
+		font-size: 14px;
+		&_textArea {
+			width: 300px;
+		}
+		&_submitBtn {
+			width: 99px;
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.header_bottomMenu__searchForm {
+		height: 55px;
+		width: 540px;
+		position: absolute;
+		left: -15px;
+		bottom: 0px;
+	}
+	.searchForm {
+		width: 540px;
+		&_textArea {
+			width: 540px;
+		}
+		&_submitBtn {
+			width: 180px;
+			height: 55px;
+			top: -50px;
+			right: -15px;
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 599px) {
+	.header_bottomMenu__searchForm {
+		width: 480px;
+		left: -15px;
+		bottom: 55px;
+		z-index: 600;
+	}
+	.searchForm {
+		width: 480px;
+		&_textArea {
+			width: 460px;
+		}
+		&_submitBtn {
+			width: 220px;
+			top: -55px;
+			right: 5px;
+		}
+	}
+}
+@media (max-width: 479px) {
+	.header_bottomMenu__searchForm {
+		width: 300px;
+	}
+	.searchForm {
+		width: 300px;
+		&_textArea {
+			width: 300px;
+		}
+		&_submitBtn {
+			width: 115px;
+			right: -15px;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.banner{
+	width: 100%;
+}
+.banner__wrapper{
+	width: 1300px;
+	margin:0 auto;
+	margin-bottom: 75px;
+	h2{
+		margin:115px 0 26px 0;
+		font-family: Proxima Nova Bold, Arial;
+		font-size: 30px;
+		color:#343434;
+	}
+	p{
+		margin: 0 0 30px 0;
+		font-family: Proxima Nova Regular, Arial;
+		font-size: 18px;
+		color:#646464;
+	}
+}
+@media only screen and (max-width: 1340px){
+	
+	.banner__wrapper{
+		width: 1014px;
+	}
+}
+@media only screen and (max-width: 1043px){
+
+	.banner__wrapper{
+		width: 750px;
+	}
+}
+@media only screen and (max-width: 787px){
+
+	.banner__wrapper{
+		width: 590px;
+	}
+}
+@media only screen and (max-width: 630px){
+
+	.banner__wrapper{
+		width: 470px;
+	}
+}
+@media only screen and (max-width: 499px){
+
+	.banner__wrapper{
+		width: 310px;
+	}
+}

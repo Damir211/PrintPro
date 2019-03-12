@@ -1,0 +1,124 @@
+.searchForm {
+	&_searchResults.visible {
+		display: block;
+	}
+	&_searchResults {
+		display: none;
+		width: 566px;
+		height: 451px;
+		background-color: $searchFormSearchResults;
+		box-sizing: border-box;
+		padding-right: 15px;
+	}
+}
+.searchResults {
+	&_container {
+		width: 566px;
+		height: 373px;
+		overflow-y: scroll;
+		background-color: $searchFormSearchResultsContainer;
+		&__item {
+			display: block;
+			text-decoration: none;
+			width: 100%;
+			min-height: 75px;
+			height: auto;
+			box-sizing: border-box;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-left: 30px;
+			cursor: pointer;
+			&:hover {
+				background-color: $searchFormSearchResultsContainerItemHover;
+			}
+			&:hover &__text{
+				color: $searchFormSearchResultsContainerItemTextHover;
+				font-family: Proxima Nova Semibold, Arial, sans-serif;
+			}
+			&__text {
+				margin: 0px;
+				box-sizing: border-box;
+				padding-right: 50px;
+				font-size: 18px;
+				color: $searchFormSearchResultsContainerItemText;
+			}
+		}
+	}
+	&_link {
+		display: block;
+		font-size: 18px;
+		width: 147px;
+		margin: 0px auto;
+		margin-top: 32px;
+		box-sizing: border-box;
+		padding-right: 5px;
+		position: relative;
+		text-decoration: none;
+		color: $searchFormSearchResultsLink;
+		font-family: Proxima Nova Bold, Arial, sans-serif;
+		&:hover {
+			text-decoration: underline;
+		}
+		&__arrow {
+			position: absolute;
+			top: 5px;
+			right: 0px;
+		}
+	}
+}
+// Media until 1359px
+@media (max-width: 1359px) {
+	.searchForm_searchResults {
+		width: 459px;
+		height: 351px;
+	}
+	.searchResults_container {
+		width: 459px;
+		height: 273px;
+		&__item__text {
+			font-size: 15px;
+		}
+	}
+}
+@media (max-width: 1023px) {
+	.searchForm_searchResults {
+		width: 300px;
+		height: 351px;
+	}
+	.searchResults_container {
+		width: 300px;
+		height: 273px;
+		&__item__text {
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.searchForm_searchResults {
+		width: 540px;
+		height: 351px;
+	}
+	.searchResults_container {
+		width: 540px;
+		height: 273px;
+		&__item__text {
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 599px) {
+	.searchForm_searchResults {
+		width: 460px;
+	}
+	.searchResults_container {
+		width: 460px;
+	}
+}
+@media (max-width: 479px) {
+	.searchForm_searchResults {
+		width: 300px;
+	}
+	.searchResults_container {
+		width: 300px;
+	}
+}
